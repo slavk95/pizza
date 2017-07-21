@@ -1,0 +1,27 @@
+@media only screen and (max-device-width: 1000px) {
+    #jssor_1{
+    	top: 120px !important;
+    	height: 320px !important;
+    	
+    }
+    .right-block img{
+    	width: 80%;
+    }
+    .right-block{
+    	/*top: -405px;*/
+    	text-align: center;
+    	/*top: -349px;*/
+    	width: 38%;
+
+
+    }
+    .left-block{
+    	position: relative;
+    	padding-top: 7%;
+   /* top: -24px;*/
+    }
+    .title-slider {
+	    margin-bottom: 14px;
+
+	}
+}

@@ -1,0 +1,483 @@
+@font-face {
+			font-family: "RalewayBold";
+			src: url("../fonts/RalewayBold/RalewayBold.eot");
+			src: url("../fonts/RalewayBold/RalewayBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/RalewayBold/RalewayBold.woff") format("woff"),
+			url("../fonts/RalewayBold/RalewayBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+@font-face {
+			font-family: "RalewayRegular";
+			src: url("../fonts/RalewayRegular/RalewayRegular.eot");
+			src: 
+			url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"),
+			url("../fonts/RalewayRegular/RalewayRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+@font-face {
+			font-family: "Awesome";
+			src:url("../fonts/Awesome/fontawesome-webfont.ttf") format("truetype");
+			src: 
+			url("../fonts/Awesome/fontawesome-webfont.woff") format("woff");
+			
+			font-style: normal;
+			font-weight: normal;
+	}
+@font-face {
+			font-family: "RobotoBold";
+			src: url("../fonts/RobotoBold/RobotoCondensedBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+@font-face {
+			font-family: "1IsadoraBold";
+			src: url("../fonts/1IsadoraBold/1IsadoraBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+
+
+
+.slider{
+	
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+	z-index: -20;
+	position: absolute;
+	width: 100%;
+}
+
+.nav{
+	
+	background: rgba( 0, 0, 0, 0.5);
+	z-index: 100;
+	height: 122px;
+
+}
+.nav-content{
+	width: 1170px;
+	margin: 0 auto;
+	padding-top: 31px;
+}
+.main-wrap{
+	width: 100%;
+}
+.content-wrap{
+	max-width: 100%;
+	margin: 0 auto;
+}
+.logo{
+	float: left;
+}
+.nav-items{
+	text-transform: uppercase;
+	font: 12px "RalewayBold";
+	padding-top: 15px;
+}
+.nav-items a{
+	color: #fff;
+	text-decoration: underline;
+	padding-right: 40px;
+}
+.nav-items a:first-child{
+	padding-left: 40px;
+}
+.nav-items a:hover{
+	color: #c59d5f;
+	text-decoration: none;
+	transition-duration: .5s;
+}
+.fa-angle-right{
+	margin-right: 12px;
+	opacity: .35;
+    
+    
+    font-size: 16px !important;
+    
+}
+.str{
+	background: #94774a;
+	border-radius: 75px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: inline-table;
+    color: black;
+    margin-right: 5px;
+    display: inline-block;
+    /*transition-duration: .5s;*/
+}
+.fa-angle-right:before {
+    vertical-align: middle;
+    
+}
+.menu-contact{
+	float: right;
+	font: 12px "RalewayRegular";
+	
+	color: white;
+	margin-top: -2.5%;
+}
+.menu-contact-text{
+	opacity: .35;
+	padding-left: 15px;
+	margin-bottom: 0;
+	margin-top: 20px;
+	text-transform: none;
+}
+.nav-content:before,
+.nav-content:after {
+   content: "";
+   display: table;
+}
+.nav-content:after {
+   clear: both;
+}
+/* для IE6-7 */
+.nav-content {
+   zoom: 1;
+}
+.tel{
+	font: 24px "RobotoBold";
+	margin: 0;
+}
+.fa-phone{
+	color: #c59d5f;
+	
+}
+.small-tel{
+	font-size: 16px;
+	text-transform: initial !important;
+}
+.mobile-nav{
+	display: none;
+}
+/*Кнопка*/
+.cmn-toggle-switch {
+	float: right;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 108px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+          transition: background 0.3s;
+}
+
+.cmn-toggle-switch:focus {
+  outline: none;
+}
+.cmn-toggle-switch span {
+  display: block;
+  position: absolute;
+  top: 45px;
+  left: 18px;
+  right: 18px;
+  height: 6px;
+  background: white;
+}
+
+.cmn-toggle-switch span::before,
+.cmn-toggle-switch span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #fff;
+  content: "";
+}
+
+.cmn-toggle-switch span::before {
+  top: -27px;
+}
+
+.cmn-toggle-switch span::after {
+  bottom: -27px;
+}
+/**
+ * Style 3
+ *
+ * Hamburger to left-arrow (htla). Hamburger menu transforms to a left-pointing
+ * arrow. Usually indicates an off canvas menu sliding in from left that
+ * will be close on re-click of the icon.
+ */
+.cmn-toggle-switch__htla {
+  background-color: #c59d5f;
+}
+
+.cmn-toggle-switch__htla span {
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+}
+
+.cmn-toggle-switch__htla span::before {
+  -webkit-transform-origin: top right;
+      -ms-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transition: -webkit-transform 0.3s, width 0.3s, top 0.3s;
+          transition: transform 0.3s, width 0.3s, top 0.3s;
+}
+
+.cmn-toggle-switch__htla span::after {
+  -webkit-transform-origin: bottom right;
+      -ms-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.3s, width 0.3s, bottom 0.3s;
+          transition: transform 0.3s, width 0.3s, bottom 0.3s;
+}
+
+/* active state, i.e. menu open */
+.cmn-toggle-switch__htla.active {
+  background-color: #18903c;
+  background: rgba(255,255,255,0.5);
+}
+
+.cmn-toggle-switch__htla.active span {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.cmn-toggle-switch__htla.active span::before,
+.cmn-toggle-switch__htla.active span::after {
+  width: 50%;
+}
+
+.cmn-toggle-switch__htla.active span::before {
+  top: 0;
+  -webkit-transform: translateX(42px) translateY(3px) rotate(45deg);
+      -ms-transform: translateX(42px) translateY(3px) rotate(45deg);
+          transform: translateX(42px) translateY(3px) rotate(45deg);
+}
+
+.cmn-toggle-switch__htla.active span::after {
+  bottom: 0;
+  -webkit-transform: translateX(42px) translateY(-3px) rotate(-45deg);
+      -ms-transform: translateX(42px) translateY(-3px) rotate(-45deg);
+          transform: translateX(42px) translateY(-3px) rotate(-45deg);
+}
+/*Слайдер*/
+#jssor_1{
+	top: 120px !important;
+	position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:600px;overflow:hidden;visibility:hidden;
+}
+#jssor_2{
+	cursor:default;position:relative;top:0px;left:0px;width:980px;height:674px;overflow:hidden;
+}
+.jssor{
+	width: 100%;height: 674px;
+}
+.left-block{
+	font: 52px "1IsadoraBold";
+	width: 360px;
+	padding-top: 5%;
+	color: white;
+	padding-left: 8%;
+}
+.left-block p{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.text-slider{
+	font: 16px "RalewayRegular";
+	width: 262px;
+	margin-bottom: 38px;
+}
+.title-slider{
+	margin-bottom: 39px;
+}
+.right-block{
+	  width: 32%;
+    float: right;
+    position: relative;
+    top: -358px;
+    padding-top: 54px;
+}
+.right-block img{
+	width: 100%;
+}
+.slider-input{
+	background-color: #c59d5f;
+	color: white;
+	font: 14px "RalewayBold";
+	text-transform: uppercase;
+	width: 165px;
+	height: 45px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.slider-input:hover{
+	background-color: #b38d5e;
+
+	
+	border-color: black;
+}
+.jssor_2{
+	top: 10px !important;
+}
+
+/**/
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left:  15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left:  0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
